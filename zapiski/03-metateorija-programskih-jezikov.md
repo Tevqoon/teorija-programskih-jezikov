@@ -131,7 +131,7 @@ Pri ukazih je situacija malenkostno drugačna, saj spreminjajo stanje in s tem t
 
 $$
   \infer{L \vdash b \qquad L \vdash c_1, L_1 \qquad L \vdash c_2, L_2}{L \vdash \ifthenelse{b}{c_1}{c_2}, L_1 \cap L_2} \qquad
-  \infer{L \vdash b \qquad L \vdash c, L'}{L \vdash \whiledo{b}{c}, L'} \\[2em]
+  \infer{L \vdash b \qquad L \vdash c, L'}{L \vdash \whiledo{b}{c}, L} \\[2em]
   \infer{L \vdash c_1, L' \qquad L' \vdash c_2, L''}{L \vdash (c_1 ; c_2), L''} \qquad
   \infer{L \vdash e}{L \vdash \ell := e, L \cup \{ \ell \}} \qquad
   \infer{}{L \vdash \skip, L}
